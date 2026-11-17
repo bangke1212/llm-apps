@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LLM Apps — DApp Web3</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header><h1>LLM Apps DApp</h1>
+<p>Versi Web3 dari katalog LLM Apps. Hubungkan wallet browser (EIP-1193, mis. MetaMask), tandatangani pesan untuk membuka katalog — tanpa server, tanpa kontrak pintar yang di-deploy, tanpa biaya gas untuk sekadar masuk.</p>
+<button id="connect">Hubungkan Wallet</button>
+<button id="sign" disabled>Tanda Tangani &amp; Buka Katalog</button>
+<p id="status">Wallet belum terhubung.</p></header>
+<main><div class="controls"><input id="q" type="search" placeholder="Cari template…"><select id="cat"><option value="">Semua kategori</option></select></div>
+<div id="grid"><p>Katalog terkunci — hubungkan wallet dulu.</p></div></main>
+<footer><p>Terinspirasi template <b>AI x402 Paying Agent</b> di repo sumber: agen dengan wallet yang membayar per panggilan data. Kode: Apache-2.0. Lihat <a href="../web/index.html">Dashboard Web</a>.</p></footer>
+<script src="../web/data.js"></script><script src="app.js"></script>
+</body></html>

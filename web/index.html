@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LLM Apps — Dashboard</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header><h1>LLM Apps Dashboard</h1>
+<p>Katalog lengkap dari <a href="https://github.com/bangke1212/awesome-llm-apps">bangke1212/awesome-llm-apps</a> (fork dari Shubhamsaboo/awesome-llm-apps, Apache-2.0). Semua kategori &amp; template, tanpa terkecuali.</p>
+<p id="stats"></p></header>
+<main>
+<div class="controls">
+<input id="q" type="search" placeholder="Cari template… mis. podcast, RAG, travel">
+<select id="cat"><option value="">Semua kategori</option></select>
+<select id="sort"><option value="az">A–Z</option><option value="za">Z–A</option><option value="cat">Per kategori</option></select>
+</div>
+<div id="grid"></div>
+<p id="empty" hidden>Tidak ada template yang cocok.</p>
+</main>
+<footer><p>Kode template: Apache-2.0, gratis dipakai/diubah/dijual dengan atribusi. Biaya model (API Claude/GPT/Gemini) terpisah — template lokal (Ollama/Llama/Qwen/DeepSeek) bisa Rp0. Lihat juga <a href="../dapp/index.html">DApp Web3</a> dan folder <code>streamlit_app/</code>.</p></footer>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>
