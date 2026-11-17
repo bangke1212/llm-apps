@@ -12,7 +12,7 @@ Situs statis tanpa build step — deploy langsung:
 2. Framework Preset: **Other**. Build Command: kosongkan. Output Directory: kosongkan (root).
 3. **Deploy.** Selesai — tidak ada environment variable yang dibutuhkan.
 
-Peta URL setelah live: `/` halaman depan • `/web/` dashboard • `/dapp/` DApp Web3 • `/catalog/templates.json` data katalog. Konfigurasi ada di `vercel.json`; folder `streamlit_app/` dan `scripts/` dikecualikan dari deployment Vercel lewat `.vercelignore`.
+Peta URL setelah live: `/` dashboard (aplikasi utama, file lengkapnya di root: `index.html` + `styles.css` + `app.js` + `data.js`) • `/web/` salinan dashboard yang sama • `/dapp/` DApp Web3 • `/catalog/templates.json` data katalog. `vercel.json` sengaja polos (tanpa redirect/aturan khusus) dan `.vercelignore` kosong — tidak ada konfigurasi yang bisa menghalangi file ter-deploy.
 
 Catatan Streamlit: bentuk Streamlit butuh server Python persisten sehingga **tidak berjalan di Vercel** — deploy `streamlit_app/app.py` gratis di [Streamlit Community Cloud](https://share.streamlit.io/) dari repo yang sama.
 
