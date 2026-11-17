@@ -4,6 +4,18 @@ Aplikasi katalog **semua** template dari fork [bangke1212/awesome-llm-apps](http
 
 Sumber upstream: [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) — lisensi **Apache-2.0**: gratis dipakai, diubah, dan dijual, dengan atribusi (lihat `NOTICE.md`).
 
+## Deploy di Vercel (struktur repo ini sudah Vercel-ready)
+
+Situs statis tanpa build step — deploy langsung:
+
+1. Di Vercel: **Add New → Project → Import** repo `bangke1212/llm-apps`.
+2. Framework Preset: **Other**. Build Command: kosongkan. Output Directory: kosongkan (root).
+3. **Deploy.** Selesai — tidak ada environment variable yang dibutuhkan.
+
+Peta URL setelah live: `/` halaman depan • `/web/` dashboard • `/dapp/` DApp Web3 • `/catalog/templates.json` data katalog. Konfigurasi ada di `vercel.json`; folder `streamlit_app/` dan `scripts/` dikecualikan dari deployment Vercel lewat `.vercelignore`.
+
+Catatan Streamlit: bentuk Streamlit butuh server Python persisten sehingga **tidak berjalan di Vercel** — deploy `streamlit_app/app.py` gratis di [Streamlit Community Cloud](https://share.streamlit.io/) dari repo yang sama.
+
 ## Tiga bentuk aplikasi (semuanya ada)
 
 ### 1. Dashboard App Web — `web/`
